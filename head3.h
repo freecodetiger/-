@@ -2,6 +2,8 @@
 #include <iostream>
 using namespace std;
 //获取周围活细胞数目
+class getAliveNum{
+public:
 int getRoundAlive(int map[ROWS][COLS], int i, int j) {
 	int num = 0;
 	if (i > 0 && j > 0 && map[i - 1][j - 1]) { num++; }//左上角
@@ -14,3 +16,4 @@ int getRoundAlive(int map[ROWS][COLS], int i, int j) {
 	if (i < ROWS - 1 && j < COLS - 1 && map[i + 1][j + 1]) { num++; }//右下方
 	return num;
 }
+};
