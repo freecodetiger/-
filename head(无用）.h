@@ -1,13 +1,10 @@
-#ifndef HEAD_H
-#define HEAD_H
 #define SPACE 20
 #define ROWS 40
 #define COLS 40
 bool isContinue;
 int map[ROWS][COLS];
-void drawRect(int x, int y, int flag);//»æÖÆÒ»¸ö¾ØĞÎ
-void drawMap(int map[ROWS][COLS]);//»æÖÆÒ»¸ö´°¿Ú
+void drawRect(int x, int y, int flag);//ç»˜åˆ¶ä¸€ä¸ªçŸ©å½¢
+void drawMap(int map[ROWS][COLS]);//ç»˜åˆ¶ä¸€ä¸ªçª—å£
 void getAndSet(int map[ROWS][COLS]);
 void lifeWeek(int map[ROWS][COLS]);
 int getRoundAlive(int map[ROWS][COLS], int i, int j);
-#endif 
